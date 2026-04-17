@@ -10,10 +10,10 @@ Cada mensaje Syslog se clasifica cruzando dos variables independientes:
 - Facility (Instalación) identifica qué parte del sistema ha generado el evento. Algunos ejemplos son: kern, user, daemon, auth, cron.
 - Severity (Severidad) indica cuanto de grave es el evento. Se definen exactamente 8 niveles.
 
-* **¿Por qué es una negligencia grave que el archivo /var/log/auth.log tenga permisos de lectura para usuarios no privilegiados?**
+**¿Por qué es una negligencia grave que el archivo /var/log/auth.log tenga permisos de lectura para usuarios no privilegiados?**
 Ese archivo es un mapa del sistema para cualquier atacante con acceso local. Concretamente, expone enumeración de usuarios válidos. El log registra cada intento de login con el nombre de usuario exacto. Cualquier atacante podria obtener en segundos una lista de qué cuentas existen y cuáles tienen actividad reciente, sin necesidad de ningún privilegio adicional.
 
-* **¿Qué información específica (como PIDs, nombres de usuario o direcciones IP) diferencia un intento fallido de conexión remota SSH de un simple fallo de contraseña de un usuario local frente a la pantalla?**
+**¿Qué información específica (como PIDs, nombres de usuario o direcciones IP) diferencia un intento fallido de conexión remota SSH de un simple fallo de contraseña de un usuario local frente a la pantalla?**
 Se vera la IP remota, puerto asociado y el protocolo.
 
 - Sistema usado: Linux Server.
