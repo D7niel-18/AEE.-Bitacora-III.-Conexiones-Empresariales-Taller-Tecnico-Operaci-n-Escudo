@@ -4,7 +4,7 @@
 - Asignatura: Sistemas informaticos
 
 ## "Fundamentos de Seguridad y Auditoría
-### 1. Syslog. 
+### Fase investigación
 Syslog es el protocolo estándar de mensajería de eventos en sistemas Unix/Linux, definido inicialmente de forma informal en la RFC 3164 (2001) y posteriormente formalizado con mayor rigor en la RFC 5424. Cualquier proceso del sistema (el kernel, el demonio SSH, el planificador cron o el subsistema de autenticación) puede emitir mensajes a través de este protocolo, que los entrega al demonio rsyslogd o syslog-ng para su almacenamiento y/o reenvío.
 Cada mensaje Syslog se clasifica cruzando dos variables independientes:
 Facility (Instalación) identifica qué parte del sistema ha generado el evento. Algunos ejemplos son: kern, user, daemon, auth, cron.
@@ -15,3 +15,5 @@ Ese archivo es un mapa del sistema para cualquier atacante con acceso local. Con
 
 * **¿Qué información específica (como PIDs, nombres de usuario o direcciones IP) diferencia un intento fallido de conexión remota SSH de un simple fallo de contraseña de un usuario local frente a la pantalla?**
 Se vera la IP remota, puerto asociado y el protocolo.
+
+- Sistema usado: Linux Server.
